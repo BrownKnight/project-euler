@@ -1,9 +1,12 @@
 namespace ProjectEuler;
 
-public class Problem0 : IProblem
+public class Problem1 : IProblem
 {
-    public void GetSolution()
+    public string GetSolution()
     {
-        throw new NotImplementedException();
+        const int SumTo = 1000;
+
+        var sum = Enumerable.Range(0, SumTo).Where(x => (x % 3 == 0) || (x % 5 == 0)).Sum();
+        return sum.ToString();
     }
 }

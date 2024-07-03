@@ -2,7 +2,7 @@ namespace ProjectEuler;
 
 public class Problem0 : IProblem
 {
-    public void GetSolution()
+    public string GetSolution()
     {
         throw new NotImplementedException();
     }
